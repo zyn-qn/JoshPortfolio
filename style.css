@@ -1,0 +1,419 @@
+body {
+    height: 100px;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgb(44, 44, 187) 50%, rgb(2,0,.6,1) 100% );
+}
+.container{
+    z-index: 1;
+    position: relative;
+    height: auto;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin-top: 30px;
+}
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 730px;
+    overflow: hidden;
+    z-index: -1;
+}
+.box div{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 6px solid rgba(206, 0, 196, 0.8);
+}
+.box div:nth-child(1){
+    top: 12%;
+    left: 35%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+    top: 20%;
+    left: 50%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+    top: 20%;
+    left: 70%;
+    animation: animate 5s linear infinite;
+}
+.box div:nth-child(11){
+    top: 51%;
+    left: 82%;
+    animation: animate 14s linear infinite;
+}
+.box div:nth-child(12){
+    top: 40%;
+    left: 50%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(13){
+    top: 10%;
+    left: 90%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(14){
+    top: 5%;
+    left: 50%;
+    animation: animate 9s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+.border{
+    background: linear-gradient(90deg, rgb(21, 21, 21) 0%, rgb(20, 20, 36)7) 50%, rgb(51, 50, 51) 100%;
+    box-sizing: border-box;
+    width: 280px;
+    height: 50px;
+    box-shadow: 10px 5px 15px #000000;
+    border-radius: 10px;
+    position: relative; 
+    overflow: hidden;
+    font-size: 10px;
+}
+.border::before {
+    content: "";
+    background-image: conic-gradient( #c9c7c7 50deg, transparent 360deg);
+    width: 280%;
+    height: 100%;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+}
+.border::after {
+    content: "";
+    width: 280%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: inset 10px 5px 15px #000000;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.head1 h1{
+    color: white;
+    position: absolute;
+    left: 65px;
+    top: 5px;
+    font-size: 35px;
+}
+.head2 h1{
+    color: #d32323;
+    position: absolute;
+    top: 5px;
+    left: 138px;
+    font-size: 35px;
+}
+ul {
+    position: fixed;
+    right: 10px;
+    list-style-type: none;
+    display: flex;
+    padding-top:20px ;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li a {
+    padding: 1px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out;
+}
+ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #ffa500;
+}
+.content{
+    position: relative;
+    width: 500px;
+    height: auto;
+    padding-bottom: 20px;
+}
+.intro{
+    color: #ffffff;
+    font-size: 20px;
+}
+.intro2 {
+    color: white;
+ }
+.intro2 b {
+     color: aqua;
+}
+.wrapper1 .media {
+    background-color: rgba(250, 235, 215, 0.418);
+    position: relative;
+    height: 70px;
+    width: 540px;
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 10px 10px;
+}
+.wrapper1 .media a:hover {
+    color: #fa0404;
+}
+button {
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    margin-right: 10px;
+    padding: 1rem;
+  }
+button:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+}
+button:hover:before {
+    background-color: #fff;
+    width: 3rem;
+}
+.imgs{
+    border: 5px solid rgb(2, 119, 237);
+    border-radius: 50%;
+    background: rgb(176, 207, 217);
+}
+.text1 {
+    text-align: justify;
+    text-justify: inter-word;
+    border: 3px solid rgb(255, 248, 248);
+    box-shadow: -40px 50px 30px rgba(255, 255, 255, 0.28);
+    padding: 3px 10px 0 10px;
+    margin-top: 100px;
+    background-color: rgba(199, 195, 207, 0.448);
+}
+.education {
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+}
+.education:hover {
+    height: 304px;
+    transform: skew(0deg);
+}
+.education h1 {
+    text-align: center;
+    margin: 0.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+.education2 {
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+}
+.education2:hover {
+    height: 455px;
+    transform: skew(0deg);
+}
+.education2 h1 {
+    text-align: center;
+    margin: 0.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+  
+.education3 {
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+}
+.education3:hover {
+    height: 335px;
+    transform: skew(0deg);
+}
+.education3 h1 {
+    text-align: center;
+    margin: 0.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+.education4 {
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+    height: 150px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+}
+.education4:hover {
+    height: 425px;
+    transform: skew(0deg);
+}
+.education4 h1 {
+    text-align: center;
+    margin: 0.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+form {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 8px;
+    color: #a8a7a7;
+}
+input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    resize: vertical;
+}
+.container-contact button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#confirmation {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4caf50;
+}
+#contactForm {
+    font-size: 15px;
+}
+#contactForm label{
+    font-size: 15px;
+    color: #000000;
+}
+.contact{
+    border: 2px solid white;
+    background-color: #5c5d61;
+    padding: 20px;
+}
