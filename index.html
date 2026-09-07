@@ -5,57 +5,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rod Joshua Aquino | Software Developer</title>
+
     <link rel="icon" type="image/svg+xml"
         href='data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="%230b0f1a"/><text x="50%" y="60%" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="%2338f0c7"> RA </text> </svg>'>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- ================= NAVIGATION / HERO ================= -->
+
     <header>
         <div class="container">
+
             <nav>
+
                 <div class="logo">
                     <span class="bracket">&lt;</span>Rod<span class="bracket">/&gt;</span>
                 </div>
 
                 <ul>
+
                     <li>
-                        <a href="#about"><i class="fa-solid fa-user"></i>About</a>
+                        <a href="#about">
+                            <i class="fa-solid fa-user"></i>
+                            About
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
+                        <a href="#skills">
+                            <i class="fa-solid fa-code"></i>
+                            Skills
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#experience"><i class="fa-solid fa-briefcase"></i>Experience</a>
+                        <a href="#experience">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+                        <a href="#projects">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            Projects
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a>
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
                     </li>
+
                 </ul>
 
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+                <button class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark and light mode">
+
                     <i class="fa-solid fa-sun" id="themeIcon"></i>
+
                 </button>
+
             </nav>
 
+
+            <!-- HERO -->
+
             <div class="hero">
+
                 <div class="hero-text">
+
                     <div class="eyebrow">
-                        <span class="dot"></span>Open to new opportunities
+                        <span class="dot"></span>
+                        Open to new opportunities
                     </div>
 
-                    <h1>Rod Joshua M. Aquino</h1>
+                    <h1>
+                        Rod Joshua M. Aquino
+                    </h1>
 
                     <h3>
-                        Software Developer <span class="sep">/</span> IT Support
+                        Software Developer
+                        <span class="sep">/</span>
+                        IT Support
                     </h3>
 
                     <p>
@@ -67,24 +114,55 @@
                     </p>
 
                     <div class="hero-cta">
-                        <a href="#projects" class="btn"><i class="fa-solid fa-folder-open"></i>View My Projects</a>
-                        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i>Get In Touch</a>
+
+                        <a href="#projects" class="btn">
+                            <i class="fa-solid fa-folder-open"></i>
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+
                     </div>
+
                 </div>
 
+
                 <div class="hero-image">
+
                     <div class="ring"></div>
+
                     <div class="glow"></div>
-                    <div class="avatar">RA</div>
-                    <div class="badge"><i class="fa-solid fa-code"></i></div>
+
+                    <div class="avatar">
+                        RA
+                    </div>
+
+                    <div class="badge">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
     </header>
 
-    <section id="about" class="container">
-        <div class="kicker">Get To Know Me</div>
-        <h2 class="section-title">About Me</h2>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="container reveal">
+
+        <div class="kicker">
+            Get To Know Me
+        </div>
+
+        <h2 class="section-title">
+            About Me
+        </h2>
 
         <p class="lead">
             I'm a Bachelor of Science in Information Technology graduate from
@@ -94,262 +172,639 @@
             experience in hardware troubleshooting, software support, LAN
             configuration, and workstation maintenance.
         </p>
+
     </section>
 
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills" class="container">
-        <div class="kicker">What I Work With</div>
-        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="kicker reveal">
+            What I Work With
+        </div>
+
+        <h2 class="section-title reveal">
+            Technical Skills
+        </h2>
+
 
         <div class="cards">
-            <div class="card">
+
+            <!-- PROGRAMMING LANGUAGES -->
+
+            <div class="card reveal reveal-delay-1">
+
                 <div class="card-icon">
                     <i class="fa-solid fa-laptop-code"></i>
                 </div>
 
-                <h3>Programming Languages</h3>
+                <h3>
+                    Programming Languages
+                </h3>
 
-                <strong>Proficient</strong>
+                <strong>
+                    Proficient
+                </strong>
+
                 <ul>
-                    <li><i class="fa-brands fa-php"></i>PHP</li>
-                    <li><i class="fa-brands fa-js"></i>JavaScript</li>
-                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
-                    <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+
+                    <li>
+                        <i class="fa-brands fa-php"></i>
+                        PHP
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-js"></i>
+                        JavaScript
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-html5"></i>
+                        HTML5
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        CSS3
+                    </li>
+
                 </ul>
 
                 <br />
 
-                <strong>Additional Experience</strong>
+                <strong>
+                    Additional Experience
+                </strong>
+
                 <ul>
-                    <li><i class="fa-brands fa-cuttlefish"></i>C++</li>
-                    <li><i class="fa-brands fa-microsoft"></i>VB.NET</li>
+
+                    <li>
+                        <i class="fa-brands fa-cuttlefish"></i>
+                        C++
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-microsoft"></i>
+                        VB.NET
+                    </li>
+
                 </ul>
+
             </div>
 
-            <div class="card">
-                <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
-                <h3>Frameworks</h3>
+
+            <!-- FRAMEWORKS -->
+
+            <div class="card reveal reveal-delay-2">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <h3>
+                    Frameworks
+                </h3>
+
                 <ul>
-                    <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
-                    <li><i class="fa-solid fa-code"></i>jQuery</li>
-                    <li><i class="fa-solid fa-arrows-rotate"></i>AJAX</li>
+
+                    <li>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        Bootstrap
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-code"></i>
+                        jQuery
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        AJAX
+                    </li>
+
                 </ul>
+
             </div>
 
-            <div class="card">
-                <div class="card-icon"><i class="fa-solid fa-database"></i></div>
-                <h3>Database</h3>
+
+            <!-- DATABASE -->
+
+            <div class="card reveal reveal-delay-3">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+
+                <h3>
+                    Database
+                </h3>
+
                 <ul>
-                    <li><i class="fa-solid fa-server"></i>MySQL</li>
-                    <li><i class="fa-solid fa-sitemap"></i>Database Design</li>
-                    <li><i class="fa-solid fa-terminal"></i>SQL Queries</li>
+
+                    <li>
+                        <i class="fa-solid fa-server"></i>
+                        MySQL
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-sitemap"></i>
+                        Database Design
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-terminal"></i>
+                        SQL Queries
+                    </li>
+
                 </ul>
+
             </div>
 
-            <div class="card">
-                <div class="card-icon"><i class="fa-solid fa-toolbox"></i></div>
-                <h3>Tools</h3>
+
+            <!-- TOOLS -->
+
+            <div class="card reveal reveal-delay-4">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-toolbox"></i>
+                </div>
+
+                <h3>
+                    Tools
+                </h3>
+
                 <ul>
-                    <li><i class="fa-solid fa-code-branch"></i>Visual Studio Code</li>
-                    <li><i class="fa-solid fa-plug"></i>XAMPP</li>
-                    <li><i class="fa-solid fa-table"></i>phpMyAdmin</li>
+
+                    <li>
+                        <i class="fa-solid fa-code-branch"></i>
+                        Visual Studio Code
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-plug"></i>
+                        XAMPP
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-table"></i>
+                        phpMyAdmin
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </section>
 
+
+    <!-- ================= EXPERIENCE ================= -->
+
     <section id="experience" class="container">
-        <div class="kicker">Where I've Been</div>
-        <h2 class="section-title">Work Experience</h2>
+
+        <div class="kicker reveal">
+            Where I've Been
+        </div>
+
+        <h2 class="section-title reveal">
+            Work Experience
+        </h2>
+
 
         <div class="timeline">
-            <div class="timeline-item">
+
+            <!-- EXPERIENCE 1 -->
+
+            <div class="timeline-item reveal">
+
                 <div class="timeline-icon">
                     <i class="fa-solid fa-building"></i>
                 </div>
 
                 <div>
-                    <h3>IT Software Developer / IT Support Specialist</h3>
-                    <h4>Moriroku Philippines Inc.</h4>
+
+                    <h3>
+                        IT Software Developer / IT Support Specialist
+                    </h3>
+
+                    <h4>
+                        Moriroku Philippines Inc.
+                    </h4>
 
                     <span class="when">
+
                         <i class="fa-solid fa-calendar-days"></i>
+
                         January 2026 – June 2026
+
                     </span>
 
+
                     <ul>
+
                         <li>
                             <i class="fa-solid fa-check"></i>
-                            Designed, developed, tested, and deployed five internal web-based systems, including Ticketing, ID Card
-                            Printing, Employee Records Management, Monthly Actual Inventory, and Warehouse Inventory Management
-                            systems.
+
+                            Designed, developed, tested, and deployed five internal
+                            web-based systems, including Ticketing, ID Card Printing,
+                            Employee Records Management, Monthly Actual Inventory,
+                            and Warehouse Inventory Management systems.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Built responsive user interfaces and implemented back-end functionalities using PHP (Vanilla), MySQL,
-                            JavaScript, HTML5, CSS3, Bootstrap, jQuery, and AJAX.
+                            <i class="fa-solid fa-check"></i>
+
+                            Built responsive user interfaces and implemented back-end
+                            functionalities using PHP (Vanilla), MySQL, JavaScript,
+                            HTML5, CSS3, Bootstrap, jQuery, and AJAX.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Performed database maintenance, bug fixes, feature enhancements, and system updates for internally
+                            <i class="fa-solid fa-check"></i>
+
+                            Performed database maintenance, bug fixes, feature
+                            enhancements, and system updates for internally
                             developed applications.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Provided technical support by troubleshooting and resolving hardware, software, and network connectivity
-                            issues, minimizing workstation downtime and maintaining end-user productivity.
+                            <i class="fa-solid fa-check"></i>
+
+                            Provided technical support by troubleshooting and resolving
+                            hardware, software, and network connectivity issues,
+                            minimizing workstation downtime and maintaining
+                            end-user productivity.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Diagnosed and resolved LAN connectivity issues, including IP configuration, cable testing, and network device troubleshooting.
+                            <i class="fa-solid fa-check"></i>
+
+                            Diagnosed and resolved LAN connectivity issues, including
+                            IP configuration, cable testing, and network device
+                            troubleshooting.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Managed Microsoft Active Directory (AD), including creating and maintaining user accounts for newly deployed desktops and laptops.
+                            <i class="fa-solid fa-check"></i>
+
+                            Managed Microsoft Active Directory (AD), including creating
+                            and maintaining user accounts for newly deployed desktops
+                            and laptops.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Administered cPanel email accounts by creating and managing employee accounts, resetting passwords, managing mailbox storage, deactivating inactive accounts, and configuring Outlook
+                            <i class="fa-solid fa-check"></i>
+
+                            Administered cPanel email accounts by creating and managing
+                            employee accounts, resetting passwords, managing mailbox
+                            storage, deactivating inactive accounts, and configuring
+                            Outlook.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Managed the company's IT Ticketing System by tracking, prioritizing, and resolving hardware, software, and user support requests.
+                            <i class="fa-solid fa-check"></i>
+
+                            Managed the company's IT Ticketing System by tracking,
+                            prioritizing, and resolving hardware, software, and user
+                            support requests.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Assisted in onboarding new employees by configuring user accounts, email access, desktops, laptops, peripherals, and required software.
+                            <i class="fa-solid fa-check"></i>
+
+                            Assisted in onboarding new employees by configuring user
+                            accounts, email access, desktops, laptops, peripherals,
+                            and required software.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Assisted in monitoring and performing basic configuration and troubleshooting of the company's CCTV system to ensure continuous operation.
+                            <i class="fa-solid fa-check"></i>
+
+                            Assisted in monitoring and performing basic configuration
+                            and troubleshooting of the company's CCTV system to ensure
+                            continuous operation.
+
                         </li>
 
                         <li>
-                            <i class="fa-solid fa-check"></i>Managed and maintained IT fixed assets, including desktops, laptops, printers, monitors, and other IT equipment, ensuring proper documentation, tracking, and operational condition.
+                            <i class="fa-solid fa-check"></i>
+
+                            Managed and maintained IT fixed assets, including desktops,
+                            laptops, printers, monitors, and other IT equipment,
+                            ensuring proper documentation, tracking, and operational
+                            condition.
+
                         </li>
+
                     </ul>
+
                 </div>
+
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="fa-solid fa-flask"></i></div>
+
+            <!-- EXPERIENCE 2 -->
+
+            <div class="timeline-item reveal reveal-delay-2">
+
+                <div class="timeline-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
                 <div>
-                    <h3>Full-Stack Developer Intern</h3>
-                    <h4>DOST - VFSS Laboratory Management System</h4>
-                    <span class="when"><i class="fa-solid fa-calendar-days"></i>February 2025 - May
-                        2025</span>
+
+                    <h3>
+                        Full-Stack Developer Intern
+                    </h3>
+
+                    <h4>
+                        DOST - VFSS Laboratory Management System
+                    </h4>
+
+                    <span class="when">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        February 2025 - May 2025
+
+                    </span>
+
 
                     <ul>
+
                         <li>
-                            <i class="fa-solid fa-check"></i>Developed a web-based
-                            laboratory management system.
+                            <i class="fa-solid fa-check"></i>
+
+                            Developed a web-based laboratory management system.
+
                         </li>
+
                         <li>
-                            <i class="fa-solid fa-check"></i>Built both front-end and
-                            back-end modules.
+                            <i class="fa-solid fa-check"></i>
+
+                            Built both front-end and back-end modules.
+
                         </li>
+
                         <li>
-                            <i class="fa-solid fa-check"></i>Improved calibration data
-                            management.
+                            <i class="fa-solid fa-check"></i>
+
+                            Improved calibration data management.
+
                         </li>
+
                     </ul>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+
+    <!-- ================= PROJECTS ================= -->
+
     <section id="projects" class="container">
-        <div class="kicker">Selected Work</div>
-        <h2 class="section-title">Projects</h2>
+
+        <div class="kicker reveal">
+            Selected Work
+        </div>
+
+        <h2 class="section-title reveal">
+            Projects
+        </h2>
+
 
         <div class="project-grid">
-            <div class="project-card">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card reveal reveal-delay-1">
+
                 <div class="project-top">
+
                     <div class="card-icon" style="margin-bottom: 0">
+
                         <i class="fa-solid fa-boxes-stacked"></i>
+
                     </div>
+
                 </div>
-                <h3>Warehouse Inventory Management System</h3>
+
+                <h3>
+                    Warehouse Inventory Management System
+                </h3>
 
                 <p>
                     Inventory management system. Improving inventory tracking and
                     reporting processes.
                 </p>
+
             </div>
 
-            <div class="project-card">
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card reveal reveal-delay-2">
+
                 <div class="project-top">
+
                     <div class="card-icon" style="margin-bottom: 0">
+
                         <i class="fa-solid fa-child-reaching"></i>
+
                     </div>
+
                 </div>
-                <h3>Kindergarten E-Learning Application</h3>
+
+                <h3>
+                    Kindergarten E-Learning Application
+                </h3>
 
                 <p>
                     Web-based learning platform featuring authentication, content
                     management, and interactive learning activities.
                 </p>
+
             </div>
 
-            <div class="project-card">
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card reveal reveal-delay-3">
+
                 <div class="project-top">
+
                     <div class="card-icon" style="margin-bottom: 0">
+
                         <i class="fa-solid fa-vials"></i>
+
                     </div>
+
                 </div>
-                <h3>VFSS Laboratory Management System</h3>
+
+                <h3>
+                    VFSS Laboratory Management System
+                </h3>
 
                 <p>
                     Developed for DOST to streamline calibration data management and
                     improve workflow.
                 </p>
+
             </div>
+
         </div>
+
     </section>
+
+
+    <!-- ================= EDUCATION ================= -->
 
     <section class="container">
-        <div class="kicker">Academic Background</div>
-        <h2 class="section-title">Education</h2>
 
-        <div class="education">
-            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div>
-                <h3>Bachelor of Science in Information Technology</h3>
-                <p>Bulacan Agricultural State College</p>
-                <span class="when"><i class="fa-solid fa-calendar-days"></i>2021 - 2025</span>
-            </div>
+        <div class="kicker reveal">
+            Academic Background
         </div>
+
+        <h2 class="section-title reveal">
+            Education
+        </h2>
+
+
+        <div class="education reveal">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Bachelor of Science in Information Technology
+                </h3>
+
+                <p>
+                    Bulacan Agricultural State College
+                </p>
+
+                <span class="when">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    2021 - 2025
+
+                </span>
+
+            </div>
+
+        </div>
+
     </section>
+
+
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact" class="container">
-        <div class="kicker">Let's Connect</div>
-        <h2 class="section-title">Contact</h2>
+
+        <div class="kicker reveal">
+            Let's Connect
+        </div>
+
+        <h2 class="section-title reveal">
+            Contact
+        </h2>
+
 
         <div class="contact-grid">
-            <a class="contact-card" href="tel:+639556685527">
+
+            <!-- PHONE -->
+
+            <a class="contact-card reveal reveal-delay-1"
+                href="tel:+639556685527">
+
                 <i class="fa-solid fa-phone"></i>
-                <div class="label">Phone</div>
-                <div class="value">+63 955 668 5527</div>
+
+                <div class="label">
+                    Phone
+                </div>
+
+                <div class="value">
+                    +63 955 668 5527
+                </div>
+
             </a>
 
-            <a class="contact-card" href="mailto:rodjoshuamanuel@gmail.com">
+
+            <!-- EMAIL -->
+
+            <a class="contact-card reveal reveal-delay-2"
+                href="mailto:rodjoshuamanuel@gmail.com">
+
                 <i class="fa-solid fa-envelope"></i>
-                <div class="label">Email</div>
-                <div class="value">rodjoshuamanuel@gmail.com</div>
+
+                <div class="label">
+                    Email
+                </div>
+
+                <div class="value">
+                    rodjoshuamanuel@gmail.com
+                </div>
+
             </a>
 
-            <div class="contact-card">
+
+            <!-- LOCATION -->
+
+            <div class="contact-card reveal reveal-delay-3">
+
                 <i class="fa-solid fa-location-dot"></i>
-                <div class="label">Location</div>
-                <div class="value">Doña Remedios Trinidad, Bulacan</div>
+
+                <div class="label">
+                    Location
+                </div>
+
+                <div class="value">
+                    Doña Remedios Trinidad, Bulacan
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
+
         <i class="fa-solid fa-code"></i>
-        <p>© 2026 Rod Joshua Aquino | Built with care</p>
+
+        <p>
+            © 2026 Rod Joshua Aquino | Built with care
+        </p>
+
     </footer>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
