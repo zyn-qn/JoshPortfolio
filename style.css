@@ -692,6 +692,39 @@ footer i {
     transition-delay: 0.4s;
 }
 
+.hero-text {
+    animation: heroReveal 0.9s ease forwards;
+}
+
+.hero-image {
+    animation: heroImageReveal 1s ease 0.15s forwards;
+    opacity: 0;
+}
+
+@keyframes heroReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroImageReveal {
+    from {
+        opacity: 0;
+        transform: translateX(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
 @media (max-width: 640px) {
     nav ul {
         display: none;
